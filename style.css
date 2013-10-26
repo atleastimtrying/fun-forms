@@ -1,0 +1,266 @@
+
+@font-face {
+  font-family: 'quicksandlight';
+  src: url('fonts/quicksand-light-webfont.eot');
+  src: url('fonts/quicksand-light-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/quicksand-light-webfont.woff') format('woff'),
+       url('fonts/quicksand-light-webfont.ttf') format('truetype'),
+       url('fonts/quicksand-light-webfont.svg#quicksandlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'quicksandregular';
+  src: url('fonts/quicksand-regular-webfont.eot');
+  src: url('fonts/quicksand-regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('fonts/quicksand-regular-webfont.woff') format('woff'),
+       url('fonts/quicksand-regular-webfont.ttf') format('truetype'),
+       url('fonts/quicksand-regular-webfont.svg#quicksandregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+* {
+  margin:0;
+  padding:0;
+}
+
+html{
+  font-family:'quicksandlight',sans-serif;
+  font-weight:normal;
+  font-size:16px;
+  color:#3e606f;
+}
+
+h1,h2,h3,h4{
+  font-family:'quicksandregular',sans-serif;
+  letter-spacing:-0.1em;
+  font-weight:normal;
+}
+
+h1{
+  font-size: 72px;
+  line-height: 72px;
+  margin-bottom: 24px;
+  text-shadow:1px 1px 0 rgba(0,0,0,0.2);
+}
+
+h2{
+  font-size: 48px;
+  line-height: 48px;
+  margin-bottom: 16px;
+}
+
+p{
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 16px;
+}
+
+li{
+  font-size:24px;
+  margin-bottom:8px;
+}
+pre{
+  background:#222;
+  padding:24px;
+  font-size:24px;
+  color:white;
+}
+body{
+  padding:24px;
+}
+
+section{
+  position:relative;
+  overflow-y: scroll;
+  border:3px solid #efefef;
+  padding:13px;
+  margin-bottom:24px;
+  border-radius:2px;
+  width:1100px;
+  transition:width 1s ease-out;
+  height:600px;
+}
+
+section.large{
+  width:1100px;
+}
+
+section.medium{
+  width:750px;
+}
+
+section.small{
+  width:320px;
+}
+
+section nav{
+  position:absolute;
+  right:16px;
+  top:16px;
+  background:rgba(255,255,255,0.5);
+}
+
+section.medium h2{
+  padding-right: 220px;
+}
+
+section.small nav{
+  position:static;
+  text-align: right;
+  margin-bottom: 8px;
+}
+
+section nav button{
+  font-family:'quicksandlight',sans-serif;
+  padding:8px;
+  font-size:16px;
+  border-radius:4px;
+  border:none;
+  background-color:#999;
+  color:white;
+  transition:background-color 0.5s ease-out;
+  cursor:pointer;
+}
+
+section nav button:hover{
+  background-color:#333;
+}
+
+div.inline-block-holder{
+  font-size:0;
+  text-align:0;
+}
+
+div.inline-block{
+  width:126px;
+  height:126px;
+  margin:2px;
+  background:#ccc;
+  display:inline-block;
+}
+
+div.inline-block:nth-child(even){
+  background:#333;
+}
+
+div.background-image{
+  background-size:cover;
+  background-position: center;
+  background-image:url(img/minions.jpg);
+  width:100%;
+  height:400px;
+}
+
+div.tr{
+  width:100%;
+  display:table;
+  margin-bottom:8px;
+}
+
+div.td{
+  display:table-cell;
+  background:rgba(0,0,0,0.3);
+  text-align: center;
+  color:white;
+  text-shadow:1px 1px 1px black;
+  padding:24px;
+}
+
+div.td:nth-child(even){
+  background:rgba(0,0,0,0.1);
+}
+
+div.columns{
+  -webkit-column-count:3;
+}
+
+.small div.columns{
+  -webkit-column-count:1;
+}
+
+div.retina-displays{
+  zoom:1;
+}
+div.retina-displays img{
+  width:40px;
+  height:40px;
+  background-color:pink;
+  padding:4px;
+}
+.medium div.retina-displays{
+  zoom:2;
+}
+.small div.retina-displays{
+  zoom:4;
+}
+
+div.whitespace{
+  padding:24px;
+  border-radius:2px;
+  border:1px solid #ccc;
+}
+
+div.whitespace section{
+  padding:16px;
+  background:#999;
+  width:auto;
+  height:auto;
+  margin:0;
+}
+
+div.whitespace section p{
+  margin-bottom:16px;
+  color:white;
+}
+.medium div.whitespace{
+  padding:16px;
+}
+.medium div.whitespace section {
+  padding:12px;
+}
+.medium div.whitespace section p{
+  margin-bottom:12px;
+}
+
+.small div.whitespace{
+  padding:0;
+}
+.small div.whitespace section {
+  padding:4px;
+  border:none;
+}
+.small div.whitespace section p{
+  margin-bottom:4px;
+}
+
+
+ul{
+  padding-left:24px;
+  margin-bottom:16px;
+}
+
+footer{
+  position:fixed;
+  bottom:0;
+  right:0;
+  text-align: right;
+  padding:24px;
+}
+
+footer a{
+  text-decoration: none;
+  color:#fff;
+  background-color: #3e606f;
+  border-radius: 2px;
+  padding:8px;
+  display:inline-block;
+  transition:background-color 0.5s ease-out;
+}
+
+footer a:hover{
+  background-color: #000;
+}
