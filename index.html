@@ -1,7 +1,7 @@
 <!doctype html>  
 <html>
   <head>
-    <title>Responsive Design</title>
+    <title>Fun with Forms</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" >    
     <meta name="apple-touch-fullscreen" content="yes" >
     <meta name="apple-mobile-web-app-capable" content="yes" > 
@@ -12,372 +12,148 @@
   </head>
   <body>
     <header>
-      <h1>Responsive Design</h1>
+      <h1>Fun with forms</h1>
     </header>
     <article>
       <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>What is responsive design?</h2>
+        <h2>What are forms and what do they do??</h2>
         <ul>
-          <li>Adapting your site to match different screen sizes</li>
-          <li>Having one site to match many devices</li>
-          <li>Making use of progressive enhancement and media queries</li>
-          <li>Allowing for a variety of pixel densities</li>
+          <li>Forms are the old school way of communicating between client and server</li>
+          <li>They package up data into key value pairs and send them to a specific url.</li>
+          <li>The use HTTP verbs, normally get or post</li>
+          <li>They used to be the main form of interactivity online.</li>
         </ul>
       </section>
       <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>Expect every element to scale</h2>
+        <h2>The advent of AJAX</h2>
         <ul>
-          <li>From the beginning don't assume things to remain the same</li>
-          <li>Think of each element as being responsive indivually</li>
-          <li>Define max-widths, max-heights, and line-heights as contingencies.</li>
-          <li>Think about your padding and margins for each element.</li>
-          <li>Try to build a collection of elements that fit together.</li>
+          <li>The concept of AJAX came along and changed this idea.</li>
+          <li>Through javascript developers can now send data without any markup at all.</li>
+          <li>This is exactly how sites with real time data like facebook work.</li>
+          <li>They do still use form inputs though.</li>
         </ul>
       </section>
       <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>The Design process</h2>
+        <h2>Form inputs - the old</h2>
         <ul>
-          <li>I work desktop first</li>
-          <li>Desktop site design is more comfortable and creative</li>
-          <li>Mobile implementations are limited</li>
-          <li>Establish a design language for the site</li>
-          <li>Apply the same design language at various scales.</li>
-          <li>Develop in the browser and keep talking.</li>
+          <li>Text</li>
+          <li><input type="text"></li>
+          <li>Select</li>
+          <li>
+            <select>
+              <option>...</option>
+              <option>FESuffolk</option>
+              <option>IPRUG</option>
+              <option>SIMMS</option>
+              <option>SyncIpswich</option>
+              <option>Dorkbot</option>
+            </select>
+          </li>
+          <li>Radio Buttons</li>
+          <li>
+            <input type="radio" name="q1" id="a1">
+            <label for="a1">Chrome</label>
+            <input type="radio" name="q1" id="a2">
+            <label for="a2">Firefox</label>
+          </li>
+          <li>Checkboxes</li>
+          <li>
+            <input type="checkbox" name="q2" id="a3">
+            <label for="a3">Javascript</label>
+            <input type="checkbox" name="q2" id="a4">
+            <label for="a4">CSS</label>
+            <input type="checkbox" name="q2" id="a5">
+            <label for="a5">html</label>
+          </li>
+          <li>Textareas</li>
+          <li><textarea></textarea></li>
         </ul>
       </section>
       <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>CSS Columns</h2>
+        <h2>Form inputs - the new</h2>
         <ul>
-          <li>Allows control of the measure of text</li>
-          <li>Falls back nicely</li>
-          <li>Provides an alternative flow to a document</li>
-          <li>Try to avoid columns becoming too long!</li>
-        </ul>
-        <div class="columns">
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        </div>
-      </section>
-      <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>use display inline-block</h2>
-        <ul>
-          <li>Avoids floats</li>
-          <li>Can be centered/aligned easily</li>
-          <li>Strightforward markup</li>
-          <li>Set them to block on the smallest size</li>
-          <li>Assign vertical-align for consistency</li>
-          <li>Easily nest elements without height worries</li>
-          <li>The whitespace issue...</li>
-        </ul>
-        <div class="inline-block-holder">
-          <div class="inline-block"></div>
-          <div class="inline-block"></div>
-          <div class="inline-block"></div>
-          <div class="inline-block"></div>
-          <div class="inline-block"></div>
-          <div class="inline-block"></div>
-          <div class="inline-block"></div>
-          <div class="inline-block"></div>
-          <div class="inline-block"></div>
-          <div class="inline-block"></div>
-          <div class="inline-block"></div>
-          <div class="inline-block"></div>
-        </div>
-      </section>
-      <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>use background images</h2>
-        <ul>
-          <li>More flexible than img tags</li>
-          <li>allows you to scale with css + media queries</li>
-          <li>background size:cover;</li>
-          <li>background-position:center;</li>
-          <li>Well supported and easily falls back.</li>
-          <li>Sits well with modernizr</li>
-        </ul>
-        <div class="background-image"></div>
-      </section>
-      <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>use semantic grouping</h2>
-        <ul>
-          <li>Don't just group by layout</li>
-          <li>Containers can be ignored at some sizes</li>
-          <li>Grouping semantically helps to order things by importance not location</li>
-        </ul>
-        <div class="semantic-group">
-          <h3>CSS</h3>
-          <ul>
-            <li>display:block;</li>
-            <li>font-size:16x;</li>
-            <li>color:#333;</li>
-            <li>border-radius:2px;</li>
-            <li>padding:16px;</li>
-          </ul>
-        </div>
-        <div class="semantic-group">
-          <h3>JS</h3>
-          <ul>
-            <li>document.ready();</li>
-            <li>document.queryselector();</li>
-            <li>arr.foreach();</li>
-            <li>el.className = 'foo';</li>
-            <li>el.style.display = 'none';</li>
-          </ul>
-        </div>
-        <div class="semantic-group">
-          <h3>HTML</h3>
-          <ul>
-            <li>&lt;title&gt;&lt;/title&gt;</li>
-            <li>&lt;header&gt;&lt;/header&gt;</li>
-            <li>&lt;article&gt;&lt;/article&gt;</li>
-            <li>&lt;section&gt;&lt;/section&gt;</li>
-            <li>&lt;footer&gt;&lt;/footer&gt;</li>
-          </ul>
-        </div>
-      </section>
-      <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>I hate floats.</h2>
-        <ul>
-          <li>I do get them, I just don't want to!</li>
-          <li>Clearfix is a hack</li>
-          <li>Raw html flows responsively</li>
-          <li>Floating everything left is an antipattern</li>
-          <li>Floating content doesn't work well on mobile.</li>
+          <li>Email</li>
+          <li><input type="email"></li>
+          <li>Range</li>
+          <li><input type="range"></li>
+          <li>Date</li>
+          <li><input type="date"></li>
+          <li>Colo(u)r</li>
+          <li><input type="color"></li>
         </ul>
       </section>
       <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>display tablerow/cell</h2>
+        <h2>Form inputs - make your own?</h2>
         <ul>
-          <li>Sometimes non tabular data needs to be in a grid</li>
-          <li>display:table/table-cell; scale nicely</li>
-          <li>Allows elements to be tables in some views but not in others</li>
-          <li>More semantically accurate than tables, sometimes.</li>
-        </ul>
-        <div class="tr">
-          <div class="td">Cell 1</div>
-          <div class="td">Cell 2</div>
-        </div>
-        <div class="tr">
-          <div class="td">Cell 1</div>
-          <div class="td">Cell 2</div>
-          <div class="td">Cell 3</div>
-        </div>
-        <div class="tr">
-          <div class="td">Cell 1</div>
-          <div class="td">Cell 2</div>
-          <div class="td">Cell 3</div>
-          <div class="td">Cell 4</div>
-        </div>
-      </section>
-      <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>Whitespace</h2>
-        <ul>
-          <li>Maintaining a consistent scale or measure of whitespace throughout</li>
-          <li>Allow padding/margins to scale as your UI does.</li>
-          <li>Whitespace is a luxury on mobile, show more content.</li>
-          <li>Does that image provide information or decoration?</li>
-        </ul>
-        <div class="whitespace">
-          <section>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-          </section>
-        </div>
-      </section>
-      <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>Javascript</h2>
-        <ul>
-          <li>Javascript runs everywhere</li>
-          <li>It doesn't always need to.</li>
-          <li>Fiddly show/hide UI breaks on mobile</li>
-          <li>use window.resize events to activate/deactivate js.</li>
-          <li>use window.innerWidth to work out what size your screen is.</li>
-          <li>CSS transitions/transforms are far more performant.</li>
-          <li>Most mobile devices have modern browsers.</li>
-        </ul>
-<pre>
-var measure = function(){
-  if(window.innerWidth > 800 && whizzy === false){
-    console.log('whizzy js');
-    whizzy = true;
-  }
-  if(window.innerWidth < 800 && whizzy){
-    console.log('no whizzy js');
-    whizzy = false;
-  }
-};
-
-window.addEventListener('resize',measure, false);
-window.addEventListener('load',measure, false);
-</pre>
-      </section>
-      <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>Retina Displays</h2>
-        <ul>
-          <li>Not all pixels are equal!</li>
-          <li>Use CSS for as much as possible.</li>
-          <li>Use vectors for everything else.</li>
-          <li>If you need that jpg, use css scaling or @2x notation</li>
-          <li>There are media queries but i havent used them.</li>
-          <li>Retina JS seems good.</li>
-        </ul>
-        <div class="retina-displays">
-          <img src="img/logo.png">
-          <img src="img/logo.svg">
-        </div>
-      </section>
-      <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>Text Layouts</h2>
-        <ul>
-          <li>Responsive typography is a challenge</li>
-          <li>you might have to let widows/ orphans happen.</li>
-          <li>CMS sites have ruined designer's type for years</li>
-          <li>Avoid &lt;br&gt; tags, they <strong>break</strong> lines.</li>
-          <li>Some people use ems, I can't think in them, they seem clever though!</li>
-          <li>Smaller screen does not mean smaller font, don't make people squint.</li>
+          <li><input type="time" class="clock"></li>
+          <li>
+            <fieldset class="stars">
+              <input value="1star" id="1star" type="radio" name="star">
+              <label for="1star">one star</label>
+              <input value="2star" id="2star" type="radio" name="star">
+              <label for="2star">two star</label>
+              <input value="3star" id="3star" type="radio" name="star">
+              <label for="3star">three star</label>
+              <input value="4star" id="4star" type="radio" name="star">
+              <label for="4star">four star</label>
+              <input value="5star" id="5star" type="radio" name="star">
+              <label for="5star">five star</label>
+            </fieldset>
+          </li>
+          <li>
+            <fieldset class="dependent-select">
+              <select class="film">
+                <option>...</option>
+                <option value="matrix" data-dependent="matrix">The Matrix</option>
+                <option value="xmen" data-dependent="xmen">X men</option>
+              </select>
+              <select class="matrix">
+                <option>...</option>
+                <option value="matrix">Morpheus</option>
+                <option value="trinity">Trinity</option>
+                <option value="neo">Neo</option>
+              </select>
+              <select class="xmen">
+                <option>...</option>
+                <option value="xmen">Professor X</option>
+                <option value="wolverine">Wolverine</option>
+                <option value="storm">Storm</option>
+              </select>
+            </fieldset>
+          </li>
         </ul>
       </section>
       <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>CSS Before/After</h2>
+        <h2>Pain points - validation?</h2>
         <ul>
-          <li>Create pseudo elements</li>
-          <li>Ideal for creative flourishes</li>
-          <li>Not real markup, are easily negated.</li>
-          <li>easily controlled via CSS</li>
+          <li>Parsely.js</li>
+          <li>validatious</li>
+          <li>Easy libraries that allow you your own custom validations.</li>
+          <li>Server side validation.</li>
         </ul>
       </section>
       <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>Media Queries</h2>
+        <h2>Pain points - styling</h2>
         <ul>
-          <li>Conditional CSS rules.</li>
-          <li>Not just for specific sizes</li>
-          <li>Can be nested or inherited.</li>
-          <li>I use lots of them</li>
-          <li>I decide the largest and smallest sizes, respond to everything inbetween.</li>
-        </ul>
-<pre>
-@media all and (max-width:320px){
-
-}
-
-@media all and (min-width:800px){
-
-}
-
-@media all and (min-width:800px) and (max-width:810px){
-
-}
-</pre>
-      </section>
-      <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>Absolute/fixed positioning</h2>
-        <ul>
-          <li>Avoid Fixed positioning in mobile!</li>
-          <li>All absolutely positioned items need containing</li>
-          <li>Try to think of where these fixed/absolutely positioned items should fit</li>
-          <li>Simplfy for mobile</li>
+          <li>The checkbox hack</li>
+          <li class="checkbox-hack"><input type="checkbox"><label>Checked?</label></li>
+          <li>CSS before/after</li>
+          <li>Dom elements with JS</li>
+          <li>-webkit-appearance:none;</li>
+          <li>input[type=email]{}</li>
+          <li><input type="text" placeholder="default"></li>
+          <li><input type="text" class="styled" placeholder="styled"></li>
         </ul>
       </section>
       <section>
-        <nav>
-          <button class="full">Large</button>
-          <button class="medium">Medium</button>
-          <button class="small">Small</button>
-        </nav>
-        <h2>Obvious Questions</h2>
-        <h3>why not mobile first?</h3>
-        <p>
-          People still think in terms of the desktop, its just easier. there are less variants in mobile layouts than desktop ones. I&rsquo;ve just found it easier overall!
-        </p>
-        <h3>Why not a framework?</h3>
-        <p>
-          I find frmaeworks hard to fix, I find them hard to work out just whats going on. they are fine as a starting point or for projects that have no exceptions. I have found most projects I come accross have exceptions pretty early on.
-        </p>
-        <h3>but x/y/z use floats, at least they are better than tables..</h3>
-        <p>
-          bully for them, I find floats are a horrible hack, they cause extra thinking to happen within a page when it&rsquo;s not needed. HTML has a natural vertical flow in place, using a technique like inline-block allows you describe other elements like an image, it fits in the flow of the document.
-        </p>
+        <h2>Is there a place for form tags?</h2>
+        <ul>
+          <li>Yes!</li>
+          <li>Having a submit event lets us group key values easily</li>
+          <li>Server side form helpers can give us dynamic paths via the action attribute</li>
+          <li>The method attribute lets us use the right http verb for sending.</li>
+          <li>Falls back nicely for older browsers.</li>
+        </ul>
       </section>
     </article>
     <footer>
