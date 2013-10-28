@@ -80,46 +80,62 @@
           <li><input type="date"></li>
           <li>Colo(u)r</li>
           <li><input type="color"></li>
+          <li>Search</li>
+          <li><input type="search"></li>
         </ul>
       </section>
       <section>
         <h2>Form inputs - make your own?</h2>
         <ul>
-          <li><input type="time" class="clock"></li>
           <li>
             <fieldset class="stars">
-              <input value="1star" id="1star" type="radio" name="star">
-              <label for="1star">one star</label>
-              <input value="2star" id="2star" type="radio" name="star">
-              <label for="2star">two star</label>
-              <input value="3star" id="3star" type="radio" name="star">
-              <label for="3star">three star</label>
-              <input value="4star" id="4star" type="radio" name="star">
-              <label for="4star">four star</label>
-              <input value="5star" id="5star" type="radio" name="star">
-              <label for="5star">five star</label>
+              <input value="star1" id="star1" type="radio" name="star">
+              <label for="star1">one star</label>
+              <input value="star2" id="star2" type="radio" name="star">
+              <label for="star2">two star</label>
+              <input value="star3" id="star3" type="radio" name="star">
+              <label for="star3">three star</label>
+              <input value="star4" id="star4" type="radio" name="star">
+              <label for="star4">four star</label>
+              <input value="star5" id="star5" type="radio" name="star">
+              <label for="star5">five star</label>
             </fieldset>
           </li>
           <li>
             <fieldset class="dependent-select">
-              <select class="film">
+              <select class="film selector">
                 <option>...</option>
                 <option value="matrix" data-dependent="matrix">The Matrix</option>
                 <option value="xmen" data-dependent="xmen">X men</option>
               </select>
-              <select class="matrix">
+              <select class="matrix selectee">
                 <option>...</option>
                 <option value="matrix">Morpheus</option>
                 <option value="trinity">Trinity</option>
                 <option value="neo">Neo</option>
               </select>
-              <select class="xmen">
+              <select class="xmen selectee">
                 <option>...</option>
                 <option value="xmen">Professor X</option>
                 <option value="wolverine">Wolverine</option>
                 <option value="storm">Storm</option>
               </select>
             </fieldset>
+          </li>
+          <li>
+            <div class='on' data-type='statebutton' data-states='on,off,neutral'>
+                <input type='hidden' value='on'>
+            </div>
+          </li>
+          <li>
+            <div class='one' data-type='statebutton' data-states='one,two,three,four'>
+                <input type='hidden' value='on'>
+            </div>
+          </li>
+          <li>
+            <div class='a' id='rotator' data-type='statebutton' data-states='a,b,c,d,e'>
+                <input type='hidden' value='a'>
+            </div>
           </li>
         </ul>
       </section>
@@ -136,7 +152,10 @@
         <h2>Pain points - styling</h2>
         <ul>
           <li>The checkbox hack</li>
-          <li class="checkbox-hack"><input type="checkbox"><label>Checked?</label></li>
+          <li class="checkbox-hack">
+            <input type="checkbox" id="checkbox-hack">
+            <label for="checkbox-hack">Checked?</label>
+          </li>
           <li>CSS before/after</li>
           <li>Dom elements with JS</li>
           <li>-webkit-appearance:none;</li>

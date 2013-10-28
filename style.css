@@ -237,6 +237,9 @@ div.whitespace section p{
   margin-bottom:4px;
 }
 
+fieldset{
+  border:0;
+}
 
 ul{
   padding-left:24px;
@@ -277,5 +280,106 @@ input.styled{
   color:#333399;
 }
 
+/* stars */
+fieldset.stars,
+fieldset.stars.star1{
+  display:inline-block;
+  font-size: 0;
+  height: 30px;
+  background-image:url(img/stars.svg);
+  background-position: 0 0;
+}
+fieldset.stars.star2{
+  background-position: 0 -30px;
+}
+fieldset.stars.star3{
+  background-position: 0 -60px;
+}
+fieldset.stars.star4{
+  background-position: 0 -90px;
+}
+fieldset.stars.star5{
+  background-position: 0 -120px;
+}
+fieldset.stars input[type=radio]{
+  display:none;
+}
+fieldset.stars label{
+  font-size:0;
+  padding:15px;
+  opacity:0.5;
+  display:inline-block;
+  cursor:pointer;
+}
 
+/* checkbox-hack */
+.checkbox-hack input{
+  display:none;
+}
+.checkbox-hack input:checked + label:before{
+  background:rgba(220, 150, 150, 0.7);
+}
+.checkbox-hack input + label:before{
+  background:rgba(150, 220, 150, 0.7);
+  content: "";
+  width:16px;
+  height:16px;
+  border-radius:8px;
+  box-shadow:0 1px 0 #333;
+  display:inline-block;
+  margin-right: 8px;
+}
 
+/* state buttons */
+
+[data-type=statebutton]{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    background-color:#eee;
+    box-shadow: inset 0 0 10px rgba(150,150,150,0.5);
+    -webkit-transition:all 0.5s ease-out;
+    -moz-transition:all 0.5s ease-out;
+    transition:all 0.5s ease-out;
+    cursor:pointer;
+    display:inline-block;
+    margin:10px;
+}
+[data-type=statebutton].on{
+    background-color:#ded;
+}
+[data-type=statebutton].off{
+    background-color:#edd;
+}
+[data-type=statebutton].one{
+    border-top-left-radius:2px;
+}
+[data-type=statebutton].two{
+    border-top-right-radius:2px;
+}
+[data-type=statebutton].three{
+    border-bottom-right-radius:2px;
+}
+[data-type=statebutton].four{
+    border-bottom-left-radius:2px;
+}
+#rotator{
+    border-radius:2px;
+    height:20px;
+    background:#333;
+}
+#rotator.a{
+    -webkit-transform: rotate(15deg);
+}
+#rotator.b{
+    -webkit-transform: rotate(45deg);
+}
+#rotator.c{
+    -webkit-transform: rotate(90deg);
+}
+#rotator.d{
+    -webkit-transform: rotate(130deg);
+}
+#rotator.e{
+    -webkit-transform: rotate(245deg);
+}
